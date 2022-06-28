@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -47,11 +48,7 @@ namespace MyHomework
             {
                 if ("".Equals(Check()))
                 {
-                    score[0] = int.Parse(chn);
-                    score[1] = int.Parse(en);
-                    score[2] = int.Parse(math);
                     Lab6Show();
-                    label6.Text = result2;
                 }
                 else
                 {
@@ -60,7 +57,7 @@ namespace MyHomework
             }
             catch (Exception ex) {
                 MessageBox.Show("輸入格式錯誤或沒輸入成績");
-                Console.WriteLine(ex);
+                Trace.WriteLine(ex);
             }                    
         }
 
@@ -80,6 +77,9 @@ namespace MyHomework
 
         private void Lab6Show()
         {
+            score[0] = int.Parse(chn);
+            score[1] = int.Parse(en);
+            score[2] = int.Parse(math);
             int max = score.Max();
             int min = score.Min();
             if (max == score[0])
@@ -106,6 +106,7 @@ namespace MyHomework
                 lowest = "數學" + math + "分";
             }
             result2 = "最高科目成績為: " + highest + "\n最低科目成績為: " + lowest;
+            label6.Text = result2;
         }
     }
 }
