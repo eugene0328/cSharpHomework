@@ -16,5 +16,11 @@ namespace MyHomework
         {
             InitializeComponent();
         }
+        public string name, result, resultAdd, resultTotal;
+        public int chn, en, math;
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -56,7 +56,7 @@ namespace MyHomework
             // 
             this.button5.Enabled = false;
             this.button5.Location = new System.Drawing.Point(691, 510);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(137, 32);
             this.button5.TabIndex = 29;
@@ -66,7 +66,7 @@ namespace MyHomework
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(75, 391);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(137, 32);
             this.button4.TabIndex = 28;
@@ -77,7 +77,7 @@ namespace MyHomework
             // 
             this.button3.Enabled = false;
             this.button3.Location = new System.Drawing.Point(75, 345);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(137, 32);
             this.button3.TabIndex = 27;
@@ -87,7 +87,7 @@ namespace MyHomework
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(75, 298);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(137, 32);
             this.button2.TabIndex = 26;
@@ -97,12 +97,13 @@ namespace MyHomework
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(75, 250);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(137, 32);
             this.button1.TabIndex = 25;
             this.button1.Text = "加入學生資料";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -143,7 +144,7 @@ namespace MyHomework
             // 
             this.txtMath.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtMath.Location = new System.Drawing.Point(109, 184);
-            this.txtMath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMath.Margin = new System.Windows.Forms.Padding(4);
             this.txtMath.Name = "txtMath";
             this.txtMath.Size = new System.Drawing.Size(132, 36);
             this.txtMath.TabIndex = 21;
@@ -191,7 +192,7 @@ namespace MyHomework
             // 
             this.txtEn.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtEn.Location = new System.Drawing.Point(109, 134);
-            this.txtEn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEn.Margin = new System.Windows.Forms.Padding(4);
             this.txtEn.Name = "txtEn";
             this.txtEn.Size = new System.Drawing.Size(132, 36);
             this.txtEn.TabIndex = 17;
@@ -200,7 +201,7 @@ namespace MyHomework
             // 
             this.txtChn.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtChn.Location = new System.Drawing.Point(109, 85);
-            this.txtChn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtChn.Margin = new System.Windows.Forms.Padding(4);
             this.txtChn.Name = "txtChn";
             this.txtChn.Size = new System.Drawing.Size(132, 36);
             this.txtChn.TabIndex = 16;
@@ -209,7 +210,7 @@ namespace MyHomework
             // 
             this.txtName.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtName.Location = new System.Drawing.Point(109, 35);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(132, 36);
             this.txtName.TabIndex = 15;
@@ -217,7 +218,7 @@ namespace MyHomework
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(75, 510);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(137, 32);
             this.button6.TabIndex = 30;
@@ -228,7 +229,7 @@ namespace MyHomework
             // 
             this.textBox5.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox5.Location = new System.Drawing.Point(57, 459);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(69, 36);
             this.textBox5.TabIndex = 31;
@@ -237,7 +238,7 @@ namespace MyHomework
             // 
             this.textBox6.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox6.Location = new System.Drawing.Point(156, 459);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(69, 36);
             this.textBox6.TabIndex = 32;
@@ -293,7 +294,7 @@ namespace MyHomework
             this.Controls.Add(this.txtEn);
             this.Controls.Add(this.txtChn);
             this.Controls.Add(this.txtName);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StudentGradeList";
             this.Text = "StudentGrade_List";
             this.ResumeLayout(false);
