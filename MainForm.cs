@@ -19,6 +19,7 @@ namespace MyHomework
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.splitContainer1.Panel2.Controls.Clear();
             HelloCsharp hello = new HelloCsharp();
             hello.TopLevel = false;
             this.splitContainer1.Panel2.Controls.Add(hello);
@@ -27,6 +28,7 @@ namespace MyHomework
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.splitContainer1.Panel2.Controls.Clear();
             Loan loan = new Loan();
             loan.TopLevel = false;
             this.splitContainer1.Panel2.Controls.Add(loan);
@@ -35,6 +37,7 @@ namespace MyHomework
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.splitContainer1.Panel2.Controls.Clear();
             POS pos = new POS();
             pos.TopLevel = false;
             this.splitContainer1.Panel2.Controls.Add(pos);
@@ -43,6 +46,7 @@ namespace MyHomework
 
         private void button4_Click(object sender, EventArgs e)
         {
+            this.splitContainer1.Panel2.Controls.Clear();
             StudentStructForm ssForm = new StudentStructForm();
             ssForm.TopLevel = false;
             this.splitContainer1.Panel2.Controls.Add(ssForm);
@@ -51,6 +55,7 @@ namespace MyHomework
 
         private void button5_Click(object sender, EventArgs e)
         {
+            this.splitContainer1.Panel2.Controls.Clear();
             StudentGrade sg = new StudentGrade();
             sg.TopLevel = false;
             this.splitContainer1.Panel2.Controls.Add(sg);
@@ -59,10 +64,25 @@ namespace MyHomework
 
         private void button6_Click(object sender, EventArgs e)
         {
+            this.splitContainer1.Panel2.Controls.Clear();
             StudentGradeList sgl = new StudentGradeList();
             sgl.TopLevel = false;
             this.splitContainer1.Panel2.Controls.Add(sgl);
             sgl.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            MyCalc mc = new MyCalc();
+            mc.TopLevel = false;
+            this.splitContainer1.Panel2.Controls.Add(mc);
+            mc.Show();
         }
     }
 }

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyCalc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyCalc.Designer.cs">
+      <DependentUpon>MyCalc.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentGradeList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     <Compile Include="StudentStructForm.Designer.cs">
       <DependentUpon>StudentStructForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MyCalc.resx">
+      <DependentUpon>MyCalc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="POS.resx">
       <DependentUpon>POS.cs</DependentUpon>
     </EmbeddedResource>
