@@ -69,6 +69,7 @@ namespace MyHomework
         private void button4_Click(object sender, EventArgs e)
         {
             label7.Text = "";
+            label6.Text = "";
             button3.Enabled = false;
         }
 
