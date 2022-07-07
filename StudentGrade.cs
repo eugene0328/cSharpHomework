@@ -62,11 +62,11 @@ namespace MyHomework
             string average = "平均";
             string highScore = "最高分";
             string lowScore = "最低分";
-            resultTotal = $"{total.PadRight(9)}{sumChinese.PadLeft(5)}{sumEnglish.PadLeft(7)}{sumMath.PadLeft(7)}\n{average.PadRight(9)}{averageChinese.PadLeft(5)}{averageEnglish.PadLeft(7)}{averageMath.PadLeft(7)}\n{highScore.PadRight(8)}{highChinese.PadLeft(5)}{highEnglish.PadLeft(7)}{highMath.PadLeft(7)}\n{lowScore.PadRight(8)}{lowChinese.PadLeft(5)}{lowEnglish.PadLeft(7)}{lowMath.PadLeft(7)}";
+            resultTotal = $"{total.PadRight(10)}{sumChinese.PadLeft(5)}{sumEnglish.PadLeft(12)}{sumMath.PadLeft(12)}\n{average.PadRight(9)}{averageChinese.PadLeft(6)}{averageEnglish.PadLeft(12)}{averageMath.PadLeft(12)}\n{highScore.PadRight(7)}{highChinese.PadLeft(5)}{highEnglish.PadLeft(12)}{highMath.PadLeft(12)}\n{lowScore.PadRight(7)}{lowChinese.PadLeft(5)}{lowEnglish.PadLeft(12)}{lowMath.PadLeft(12)}";
             label6.Text = resultTotal;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             label7.Text = "";
             button3.Enabled = false;
