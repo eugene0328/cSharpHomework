@@ -24,3 +24,7 @@ C:\Users\Student\source\repos\Lab_csharp\MyHomework\obj\Debug\MyHomework.Loan.re
 C:\Users\Student\source\repos\Lab_csharp\MyHomework\obj\Debug\MyHomework.LoanReport.resources
 C:\Users\Student\source\repos\Lab_csharp\MyHomework\obj\Debug\MyHomework.MainForm.resources
 C:\Users\Student\source\repos\Lab_csharp\MyHomework\obj\Debug\MyHomework.POS.resources
+C:\Users\Student\source\repos\Lab_csharp\MyHomework\obj\Debug\MyHomework.MyCalc.resources
+C:\Users\Student\source\repos\Lab_csharp\MyHomework\obj\Debug\MyHomework.StudentGrade.resources
+C:\Users\Student\source\repos\Lab_csharp\MyHomework\obj\Debug\MyHomework.StudentGradeList.resources
+C:\Users\Student\source\repos\Lab_csharp\MyHomework\obj\Debug\MyHomework.StudentStructForm.resources
