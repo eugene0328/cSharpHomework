@@ -25,15 +25,72 @@ namespace MyHomework
             chn = txtChn.Text;
             en = txtEn.Text;
             math = txtMath.Text;
-            total = int.Parse(chn) + int.Parse(en) + int.Parse(math);
-            avg = (int.Parse(chn) + int.Parse(en) + int.Parse(math)) / 3;
-            MaxMinScore();
-            student.Add(new Student(name, chn, en, math, total.ToString(), avg.ToString(), max, min));
-            ShowList(student);
+            if (check() == true) {             
+                total = int.Parse(chn) + int.Parse(en) + int.Parse(math);
+                avg = (int.Parse(chn) + int.Parse(en) + int.Parse(math)) / 3;
+                MaxMinScore();
+                student.Add(new Student(name, chn, en, math, total.ToString(), avg.ToString(), max, min));
+                ShowList(student);
+                button3.Enabled = true;
+            }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            List<int> ChnScoreTotal = new List<int>();
+            List<int> EnScoreTotal = new List<int>();
+            List<int> MathScoreTotal = new List<int>();
+            foreach (Student student in student)
+            {
+                ChnScoreTotal.Add(int.Parse(student.chn));
+                EnScoreTotal.Add(int.Parse(student.en));
+                MathScoreTotal.Add(int.Parse(student.math));
+            }
+            string sumChinese = ChnScoreTotal.Sum().ToString();
+            string averageChinese = Math.Round(ChnScoreTotal.Average(), 1, MidpointRounding.AwayFromZero).ToString();
+            string highChinese = ChnScoreTotal.Max().ToString();
+            string lowChinese = ChnScoreTotal.Min().ToString();
+            string sumEnglish = EnScoreTotal.Sum().ToString();
+            string averageEnglish = Math.Round(EnScoreTotal.Average(), 1, MidpointRounding.AwayFromZero).ToString();
+            string highEnglish = EnScoreTotal.Max().ToString();
+            string lowEnglish = EnScoreTotal.Min().ToString();
+            string sumMath = MathScoreTotal.Sum().ToString();
+            string averageMath = Math.Round(MathScoreTotal.Average(), 1, MidpointRounding.AwayFromZero).ToString();
+            string highMath = MathScoreTotal.Max().ToString();
+            string lowMath = MathScoreTotal.Min().ToString();
+            string total = "總分";
+            string average = "平均";
+            string highScore = "最高分";
+            string lowScore = "最低分";
+            resultTotal = $"{total.PadRight(9)}{sumChinese.PadLeft(5)}{sumEnglish.PadLeft(7)}{sumMath.PadLeft(7)}\n{average.PadRight(9)}{averageChinese.PadLeft(5)}{averageEnglish.PadLeft(7)}{averageMath.PadLeft(7)}\n{highScore.PadRight(8)}{highChinese.PadLeft(5)}{highEnglish.PadLeft(7)}{highMath.PadLeft(7)}\n{lowScore.PadRight(8)}{lowChinese.PadLeft(5)}{lowEnglish.PadLeft(7)}{lowMath.PadLeft(7)}";
+            label6.Text = resultTotal;
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
             label7.Text = "";
+            button3.Enabled = false;
+        }
+
+        private bool check()
+        {
+            StringBuilder chkMsg = new StringBuilder("");            
+            if ("".Equals(name))
+            {
+                chkMsg.Append("".Equals(chkMsg.ToString()) ? "請輸入姓名" : "、姓名");
+            }
+            if ("".Equals(chn) || "".Equals(en) || "".Equals(math))
+            {
+                chkMsg.Append("".Equals(chkMsg.ToString()) ? "請輸入成績" : "、成績");                
+            }
+            if ("".Equals(chkMsg.ToString()))
+            {
+                return true;
+            }
+            else { 
+                MessageBox.Show(chkMsg.ToString());
+            }
+            return false;            
         }
 
         public void MaxMinScore()
