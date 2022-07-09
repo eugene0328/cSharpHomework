@@ -57,7 +57,7 @@ namespace MyHomework
             // 
             this.txtName.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtName.Location = new System.Drawing.Point(109, 35);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(132, 36);
             this.txtName.TabIndex = 0;
@@ -66,7 +66,7 @@ namespace MyHomework
             // 
             this.txtChn.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtChn.Location = new System.Drawing.Point(109, 85);
-            this.txtChn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtChn.Margin = new System.Windows.Forms.Padding(4);
             this.txtChn.Name = "txtChn";
             this.txtChn.Size = new System.Drawing.Size(132, 36);
             this.txtChn.TabIndex = 1;
@@ -75,7 +75,7 @@ namespace MyHomework
             // 
             this.txtEn.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtEn.Location = new System.Drawing.Point(109, 134);
-            this.txtEn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEn.Margin = new System.Windows.Forms.Padding(4);
             this.txtEn.Name = "txtEn";
             this.txtEn.Size = new System.Drawing.Size(132, 36);
             this.txtEn.TabIndex = 2;
@@ -136,7 +136,7 @@ namespace MyHomework
             // 
             this.txtMath.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtMath.Location = new System.Drawing.Point(109, 184);
-            this.txtMath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMath.Margin = new System.Windows.Forms.Padding(4);
             this.txtMath.Name = "txtMath";
             this.txtMath.Size = new System.Drawing.Size(132, 36);
             this.txtMath.TabIndex = 6;
@@ -168,7 +168,7 @@ namespace MyHomework
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(75, 250);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(137, 32);
             this.button1.TabIndex = 10;
@@ -179,18 +179,19 @@ namespace MyHomework
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(75, 298);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(137, 32);
             this.button2.TabIndex = 11;
             this.button2.Text = "插入儲存資料";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.Enabled = false;
             this.button3.Location = new System.Drawing.Point(75, 345);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(137, 32);
             this.button3.TabIndex = 12;
@@ -201,17 +202,18 @@ namespace MyHomework
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(75, 439);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(137, 32);
             this.button5.TabIndex = 14;
             this.button5.Text = "隨機加入20筆";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(75, 391);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(137, 32);
             this.button4.TabIndex = 13;
@@ -223,7 +225,7 @@ namespace MyHomework
             // 
             this.splitContainer1.BackColor = System.Drawing.Color.GhostWhite;
             this.splitContainer1.Location = new System.Drawing.Point(289, 35);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -272,7 +274,7 @@ namespace MyHomework
             this.Controls.Add(this.txtEn);
             this.Controls.Add(this.txtChn);
             this.Controls.Add(this.txtName);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StudentGrade";
             this.Text = "StudentGrade";
             this.splitContainer1.Panel1.ResumeLayout(false);

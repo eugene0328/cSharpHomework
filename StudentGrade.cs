@@ -18,7 +18,8 @@ namespace MyHomework
         }
         List<Student> student = new List<Student>();
         string name, chn, en, math, max, min, result, resultTotal;
-        int total, avg, count;
+        int total, avg;
+
         private void button1_Click(object sender, EventArgs e)
         {
             name = txtName.Text;
@@ -30,9 +31,20 @@ namespace MyHomework
                 avg = (int.Parse(chn) + int.Parse(en) + int.Parse(math)) / 3;
                 MaxMinScore();
                 student.Add(new Student(name, chn, en, math, total.ToString(), avg.ToString(), max, min));
-                ShowList(student);
+                ShowList();
                 button3.Enabled = true;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            name = RandomList();
+            Random random = new Random();
+            int chinese = random.Next(101);
+            int english = random.Next(101);
+            int math = random.Next(101);
+            GenerateList(name, chinese, english, math);
+            button3.Enabled = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -70,7 +82,22 @@ namespace MyHomework
         {
             label7.Text = "";
             label6.Text = "";
+            result = "";
             button3.Enabled = false;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            for (int i = 0; i < 20; i++)
+            {
+                name = RandomList();
+                int chinese = random.Next(101);
+                int english = random.Next(101);
+                int math = random.Next(101);
+                GenerateList(name, chinese, english, math);
+            }
+            button3.Enabled = true;
         }
 
         private bool check()
@@ -104,9 +131,34 @@ namespace MyHomework
             min = $"{subject[minScore]}{score[minScore]}";
         }
 
-        public void ShowList(List<Student> students)
-        {            
-            foreach (Student student in students)
+        public string RandomList() {
+            string s = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+            string tempStr = "";
+            Random r = new Random();
+            for (int i = 0; i < 6; i++)
+            {
+                tempStr += s[r.Next(52)];
+            }
+            return tempStr;
+        }
+
+        private void GenerateList(string name, int chinese, int english, int math)
+        {
+            List<int> score = new List<int> { chinese, english, math };
+            List<string> subject = new List<string> { "國文", "英文", "數學" };
+            int maxScoreI = score.IndexOf(score.Max());
+            int minScoreI = score.IndexOf(score.Min());
+            string totalScore = score.Sum().ToString();
+            string averageScore = (Math.Round(score.Average(), 1, MidpointRounding.AwayFromZero)).ToString();
+            string maxScore = $"{subject[maxScoreI]}{score[maxScoreI]}";
+            string minScore = $"{subject[minScoreI]}{score[minScoreI]}";
+            student.Add(new Student(name, chinese.ToString(), english.ToString(), math.ToString(), totalScore, averageScore, minScore, maxScore));
+            ShowList();
+        }
+
+        public void ShowList()
+        {
+            foreach (Student student in student)
             {
                 result = $"{student.name.PadRight(10)}{student.chn.PadLeft(7)}{student.en.PadLeft(13)}{student.math.PadLeft(13)}{student.total.PadLeft(13)}{student.avg.PadLeft(13)}{student.min.PadLeft(13)}{student.max.PadLeft(8)}\n";
             }
