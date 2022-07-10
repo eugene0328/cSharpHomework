@@ -52,11 +52,11 @@ namespace MyHomework
             List<int> ChnScoreTotal = new List<int>();
             List<int> EnScoreTotal = new List<int>();
             List<int> MathScoreTotal = new List<int>();
-            foreach (Student student in student)
+            foreach (Student students in student)
             {
-                ChnScoreTotal.Add(int.Parse(student.chn));
-                EnScoreTotal.Add(int.Parse(student.en));
-                MathScoreTotal.Add(int.Parse(student.math));
+                ChnScoreTotal.Add(int.Parse(students.chn));
+                EnScoreTotal.Add(int.Parse(students.en));
+                MathScoreTotal.Add(int.Parse(students.math));
             }
             string sumChinese = ChnScoreTotal.Sum().ToString();
             string averageChinese = Math.Round(ChnScoreTotal.Average(), 1, MidpointRounding.AwayFromZero).ToString();
