@@ -84,5 +84,14 @@ namespace MyHomework
             this.splitContainer1.Panel2.Controls.Add(mc);
             mc.Show();
         }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            GuessNumber guessNum = new GuessNumber();
+            guessNum.TopLevel = false;
+            this.splitContainer1.Panel2.Controls.Add(guessNum);
+            guessNum.Show();
+        }
     }
 }
