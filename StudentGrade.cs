@@ -83,6 +83,7 @@ namespace MyHomework
             label7.Text = "";
             label6.Text = "";
             result = "";
+            student.Clear();
             button3.Enabled = false;
         }
 

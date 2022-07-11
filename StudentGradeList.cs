@@ -60,6 +60,7 @@ namespace MyHomework
             label6.Text = "";
             label9.Text = "";
             result = "";
+            student.Clear();
             button5.Enabled = false;
         }
 
