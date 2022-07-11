@@ -38,7 +38,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FloralWhite;
             this.button1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button1.Location = new System.Drawing.Point(117, 216);
+            this.button1.Location = new System.Drawing.Point(119, 216);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 36);
             this.button1.TabIndex = 0;
@@ -50,7 +50,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.FloralWhite;
             this.button2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button2.Location = new System.Drawing.Point(255, 216);
+            this.button2.Location = new System.Drawing.Point(257, 216);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 36);
             this.button2.TabIndex = 1;
@@ -61,10 +61,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.LemonChiffon;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("新細明體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(73, 88);
+            this.label1.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label1.Location = new System.Drawing.Point(75, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(337, 33);
             this.label1.TabIndex = 2;

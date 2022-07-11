@@ -30,6 +30,12 @@ namespace MyHomework
             MessageBox.Show($"Answer: {i}", "答案", MessageBoxButtons.OK);
         }
 
+        public string GetLabelConditionText
+        {
+            get { return label1.Text; }
+            set { label1.Text = value; }
+        }
+
         public void Generate() {
             if (i == 0) { 
                 i = new Random().Next(1, 100);

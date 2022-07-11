@@ -13,12 +13,16 @@ namespace MyHomework
 {
     public partial class GuessNumInput : Form
     {
+        public GuessNumInput () {
+            InitializeComponent();
+        }
+
         public GuessNumInput(int i)
         {
             InitializeComponent();
-            answer = i;
+            ans = i;
         }
-        int answer;
+        int ans;
         int max = 100;
         int min = 0;
         private void button1_Click(object sender, EventArgs e)
@@ -26,6 +30,23 @@ namespace MyHomework
             if (check() == "")
             {
                 int j = int.Parse(textBox1.Text);
+                if (j == ans) {
+                    MessageBox.Show("恭喜猜中，數字為" + ans);
+                }
+                else {
+                    foreach (Form form in Application.OpenForms)
+                    {
+                        if (form.GetType() == typeof(GuessNumber)) {                        
+                            if (j > ans) {
+                                max = j;
+                                ((GuessNumber)form).GetLabelConditionText = $"Too Large!!!\nBetween {min} and {max}";
+                            } else if (j < ans) { 
+                                min = j;
+                                ((GuessNumber)form).GetLabelConditionText = $"Too Small!!!\nBetween {min} and {max}";
+                            }
+                        }
+                    }                        
+                }
             }
             else {
                 MessageBox.Show(check());
