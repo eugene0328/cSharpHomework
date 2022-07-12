@@ -64,11 +64,7 @@ namespace MyHomework
 
         private void button6_Click(object sender, EventArgs e)
         {
-            this.splitContainer1.Panel2.Controls.Clear();
-            StudentGradeList sgl = new StudentGradeList();
-            sgl.TopLevel = false;
-            this.splitContainer1.Panel2.Controls.Add(sgl);
-            sgl.Show();
+
         }
 
         private void button7_Click(object sender, EventArgs e)

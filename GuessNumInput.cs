@@ -13,10 +13,6 @@ namespace MyHomework
 {
     public partial class GuessNumInput : Form
     {
-        public GuessNumInput () {
-            InitializeComponent();
-        }
-
         public GuessNumInput(int i)
         {
             InitializeComponent();

@@ -64,12 +64,6 @@
     <Compile Include="MyCalc.Designer.cs">
       <DependentUpon>MyCalc.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentGradeList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StudentGradeList.Designer.cs">
-      <DependentUpon>StudentGradeList.cs</DependentUpon>
-    </Compile>
     <Compile Include="StudentGrade.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,9 +143,6 @@
     </Compile>
     <EmbeddedResource Include="StudentGrade.resx">
       <DependentUpon>StudentGrade.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StudentGradeList.resx">
-      <DependentUpon>StudentGradeList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentStructForm.resx">
       <DependentUpon>StudentStructForm.cs</DependentUpon>
