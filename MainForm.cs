@@ -81,6 +81,15 @@ namespace MyHomework
             mc.Show();
         }
 
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.splitContainer1.Panel2.Controls.Clear();
+            OXGame ttt = new OXGame();
+            ttt.TopLevel = false;
+            this.splitContainer1.Panel2.Controls.Add(ttt);
+            ttt.Show();
+        }
+
         private void button15_Click(object sender, EventArgs e)
         {
             this.splitContainer1.Panel2.Controls.Clear();
